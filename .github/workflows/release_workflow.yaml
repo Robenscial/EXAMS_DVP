@@ -1,7 +1,9 @@
 name: release_workflow
 on:
-  tags:
-    - "*.*.*"
+  push:
+    tags:
+      - '*.*.*'
+
 jobs:
   build_and_publish:
     runs-on: ubuntu-latest

@@ -18,4 +18,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: "${{secrets.DOCKERHUB_USERNAME}}/:${{ github.ref_name}}"
+          tags: "${{secrets.DOCKERHUB_USERNAME}}/exams_dvp:${{ github.ref_name}}"

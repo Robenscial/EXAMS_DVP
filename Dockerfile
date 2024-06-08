@@ -6,7 +6,7 @@ COPY go.mod ./
 COPY go.sum ./
 RUN go mod download
 
-ADD super_calculator .
+COPY . .
 
 RUN go build -o /calculator
 
